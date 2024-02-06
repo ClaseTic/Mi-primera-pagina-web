@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Librería</title>
+</head>
+<body>
+    <form action="post">
+        <fieldset><!--Dentro de mi formulario creo un apartado de los datos del cliente -->
+
+
+            <legend>Datos del Cliente</legend>
+            <br>
+        Nombre completo: <textarea name="Nombre" placeholder="Introduce tu nombre y apellidos" id="" cols="30" rows="1"></textarea> <br>
+        Teléfono móvil: <textarea name="Nombre" placeholder="(+34) 678 987 098" id="" cols="30" rows="1"></textarea><br>
+        E-mail : <textarea name="Nombre" placeholder="Introduce tu email" id="" cols="30" rows="1"></textarea><br>
+        </fieldset>
+        <fieldset><!--Dentro de mi formulario creo un apartado para elegir el libro y la cantidad -->
+            <legend>Libros</legend>
+            <br>
+            <label>Seleccione un libro: <input list="Libros" name="Libros"/></label><!--Creo una etiqueta de texto que cuando lo pulses te lleve dentro de la lista con datos en la que puedes escribir-->
+                <datalist id="Libros">
+                    <option value="HTML5 Canvas by Steve Fulton and Jeff Fulton"></option>
+                    <option value="Javascript: The Definitive Guide by David Flanagan"></option>
+                    <option value="HTML5 Geolocation by Anthony T.Holdener III"></option>
+                    <option value="Supercharged Javascript Graphics by Raffaele Cecco"></option>
+                    <option value="HTML5: Up and Running by Mark Pilgrim"></option>
+                </datalist>
+            Cantidad(max 5):<input type="text" min="1" max="5"><!--Utilizo min y max para que dentro del texto solo se pueda utilizar maximo el número 5 y mínimo el nñumero 1--> <br>
+            <br>
+        </fieldset>
+        <input type="submit" value="Comprar">
+    </form>
+</body>
+</html>
